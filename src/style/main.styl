@@ -5,6 +5,7 @@ MAINWIDTH = 1140px
 body
   font-family: "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif
   background-color: #222684
+  min-width: 320px
 .header
   text-align: right
   background-color: #ffffff
@@ -66,7 +67,7 @@ body
     padding: 100px 0 0 0
     @media $screenWidthSmaller_900
       width: 80%
-      padding: 70px 0
+      padding: 50px 0
     img
       position: absolute
       width: 68px
@@ -79,7 +80,7 @@ body
         top: 103px
         left: 853px
     .intro-text
-      font-size: 18px
+      font-size: 16px
       color: #ffffff
       display: inline-block
       vertical-align: top
@@ -93,14 +94,14 @@ body
       margin: 0 86px 0 0
       @media $screenWidthSmaller_900
         width: 100%
-        margin: 0 0 90px 0
+        margin: 0 0 40px 0
         
     .intro-text2
       width: 296px
       margin: 0 86px 0 0
       @media $screenWidthSmaller_900
         width: 100%
-        margin: 0 0 90px 0
+        margin: 0 0 40px 0
         
     .intro-text3
       width: 190px
@@ -116,6 +117,8 @@ body
     padding: 70px 0
     @media $screenWidthSmaller_900
       width: 95%
+      padding: 30px 0
+      
     img.guest-title.pc
       width: 1140px
       margin 0 0 60px 0
@@ -129,6 +132,9 @@ body
         display: block       
     .guest-list-hd
       width: 100%
+      text-align: left
+      @media $screenWidthSmaller_900
+        text-align: center
       .guest-card-item
         text-align: left
         text-decoration: none
@@ -147,8 +153,11 @@ body
         transition: all 0.3s
         transform: perspective(500px)
         @media $screenWidthSmaller_900
+          padding: 10px 10px 0 10px
           width: 46%
           height: auto
+          border-radius: 5px
+          
         &:hover
           box-shadow: 0 0 33px 10px rgba(0, 0, 0, 0.21)
           transform: perspective(500px) translate3d(0,0,10px)
@@ -156,8 +165,8 @@ body
             left: -41px
             padding-left: 30px
             @media $screenWidthSmaller_900
-              left: -21px
-              padding-left: 0
+              left: -10px
+              padding-left: inherit
           img.jiantou
             opacity: 1
           @media $screenWidthSmaller_900
@@ -182,8 +191,9 @@ body
           height: 240px
           position: relative
           @media $screenWidthSmaller_900
-            width: 90%
+            width: 100%
             height: auto
+            margin: 0 auto
           img.web
             width: 100%
             transition: all 0.3s
@@ -202,41 +212,56 @@ body
           transition: all 0.3s
           font-weight: bolder
           @media $screenWidthSmaller_900
-            top: 126px
-            width: 80px
-            height: 34px
-            line-height: 34px
-            font-size: 20px
+            top: auto
+            bottom: -5px
+            left: -10px
+            width: 65px
+            height: 27px
+            line-height: 27px
+            font-size: 16px
         .card-title
           color: #ffffff
           font-size: 30px
           font-weight: bolder
           margin: 30px 0 0 10px
+          height: 90px
+          overflow: hidden
           @media $screenWidthSmaller_900
-            font-size: 20px
+            font-size: 14px
+            margin: 15px 0 0 0
+            height: 63px
         .card-person-info
           color: #ffffff
           font-size: 21px
           font-weight: 400
           margin: 13px 0 0 10px
+          height: 96px
           @media $screenWidthSmaller_900
-            font-size: 16px
+            font-size: 12px
+            margin: 7px 0 0 0
+            height: 54px
+            
+            
         img.jiantou
           width: 75px
           margin: 18px 0 0 10px
           opacity: 0.7
           transition: all 0.3s
           @media $screenWidthSmaller_900
-            width: 52px
-            margin: 15px 0 0 10px
-            padding: 0 0 15px 0
+            width: 37px
+            margin: 12px 0 0 0px
+            padding: 0 0 7px 0
+            opacity: 1
+            
         img.logo
           position: absolute
           bottom: 14px
           right: 22px
           width: 88px
           @media $screenWidthSmaller_900
-            width: 60px
+            width: 36px
+            bottom: 7px
+            right: 11px
 
 .interview
   text-align: center
@@ -272,7 +297,7 @@ body
           box-shadow: 0 0 33px 10px rgba(0, 0, 0, 0.21)
           transform: perspective(500px) translate3d(0,0,10px)
           img.jiantou-interview
-            opacity: 1
+            opacity: 1 !important
         @media $screenWidthSmaller_900
           height: auto
           width: 95%
@@ -310,7 +335,7 @@ body
           @media $screenWidthSmaller_900
             top: 10px
             left: 162px
-            font-size: 20px
+            font-size: 14px
         .touxian
           position: absolute
           top: 29px
@@ -319,9 +344,10 @@ body
           color: #ffffff
           font-weight: 400
           @media $screenWidthSmaller_900
-            top: 11px
-            left: 335px
-            font-size: 14px
+            top: 8px
+            left: auto
+            right: 11px
+            font-size: 12px
         img.jiantou-interview
           position: absolute
           top: 29px
@@ -334,6 +360,7 @@ body
             right: 33px
             width: 49px
             opacity: 1
+            display: none
         .describe
           position: absolute
           top: 100px
@@ -344,10 +371,10 @@ body
           color: #ffffff
           @media $screenWidthSmaller_900
             top: 49px
-            right: 30px
-            font-size: 22px
+            right: 10px
+            font-size: 14px
             font-weight: 400
-            line-height: 1.2em
+            line-height: 1.8em
             
 .pic-coll
   .pic-coll-container
@@ -379,7 +406,7 @@ body
         height: 372px
         margin-bottom: 12px
         @media $screenWidthSmaller_900
-          height: 196px
+          height: auto
           
         &.long
           width: 756px
@@ -397,6 +424,8 @@ body
     padding: 0 0 60px 0
     img
       width: 313px
+      @media $screenWidthSmaller_900
+        width: 50%
         
 
 

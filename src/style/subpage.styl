@@ -1,0 +1,207 @@
+@import "cssreset.css"
+
+$screenWidthSmaller_900 = "screen and (max-width: 900px)"
+MAINWIDTH = 1140px
+body
+  font-family: "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif
+  background-color: #222684
+  min-width: 320px
+  @media $screenWidthSmaller_900
+    background-color: #1a1477
+.header
+  display: block
+  text-align: right
+  background-color: #ffffff
+  text-decoration: none
+  @media $screenWidthSmaller_900
+    text-align: left
+  .container
+    width: MAINWIDTH
+    margin: 0 auto
+    position: relative
+    @media $screenWidthSmaller_900
+      width: 90%
+  img
+    padding: 20px 0
+    width: 300px
+    margin-bottom: -5px
+    @media $screenWidthSmaller_900
+      padding: 10px 0
+      width: 200px
+.banner
+  background-color: #212187
+  height: 480px
+  @media $screenWidthSmaller_900
+    background-color: transparent
+    height: auto
+    
+  .banner-container
+    background-image: url('../img/banner_bg_pc.png')
+    background-position: center 
+    background-size: cover
+    width: MAINWIDTH
+    height: 100%
+    margin: 0 auto
+    box-sizing: border-box
+    padding: 90px 0 0 0
+    @media $screenWidthSmaller_900
+      width: 100%
+      padding: 0 0 0 0
+      background-image: none
+      margin-bottom: -30px
+    img.pc
+      width: 1060px
+      @media $screenWidthSmaller_900
+        display: none
+    img.wap
+      width: 100%
+      display: none
+      margin-bottom: -5px
+      @media $screenWidthSmaller_900
+        width: 80%
+        display: block
+        margin: 80px auto 100px auto
+.intro
+  background-color: #201b89
+  height: 302px
+  width: 100%
+  display: block
+  @media $screenWidthSmaller_900
+    display: none
+  .intro-container
+    position: relative
+    width: MAINWIDTH
+    margin: 0 auto
+    box-sizing: border-box
+    padding: 100px 0 0 0
+    @media $screenWidthSmaller_900
+      width: 80%
+      padding: 50px 0
+
+.bottom-logo
+  .bottom-logo-container
+    text-align: center
+    padding: 0 0 60px 0
+    img
+      width: 313px
+
+.main
+  background-color: #262092
+  padding: 80px 20px
+  width: 90%
+  margin: -200px auto 60px auto
+  @media $screenWidthSmaller_900
+    margin: 0px auto 60px auto
+    width: 90%
+    padding: 20px 0px
+    
+    
+    
+  
+  .main-container
+    width: 970px
+    margin: 0 auto
+    @media $screenWidthSmaller_900
+      width: 95%
+    
+    .person-hd
+      position: relative
+      margin-bottom: 60px
+      @media $screenWidthSmaller_900
+        margin-bottom: 30px
+        
+      .img-bg
+        display: inline-block
+        vertical-align: bottom
+        width: 206px
+        height: 167px
+        background-color: #e93f18
+        box-sizing: border-box
+        padding: 4px
+        @media $screenWidthSmaller_900
+          width: 106px
+          height: auto
+          padding: 0
+          vertical-align: top
+          
+        img.person
+          width: 100%
+          margin-bottom: -5px
+      .person-info-border
+        display: inline-block
+        vertical-align: bottom
+        width: 323px
+        height: 111px
+        border-bottom: 4px solid #e93f18
+        border-right: 4px solid #e93f18
+        border-top: 4px solid #e93f18
+        padding: 22px 19px 0px 0px
+        box-sizing: border-box
+        position: relative
+        
+        @media $screenWidthSmaller_900
+          position: absolute
+          right: 0px
+          border: none
+          width: auto
+          height: auto
+          vertical-align: top
+          padding: 0 0 0 10px
+        
+        .person-info
+          color: #ffffff
+          text-align: right
+          font-size: 21px
+          line-height: 1.4em
+          @media $screenWidthSmaller_900
+            font-size: 12px
+            line-height: 1.6em
+            text-align: right
+          .red-line
+            display: none
+            @media $screenWidthSmaller_900
+              display: block
+              border-top: 2px solid #e93f18
+              width: 100%
+              margin-bottom: 10px
+          strong.pc
+            display: block
+            position: absolute
+            top: -40px
+            right: 16px
+            font-size: 28px
+            @media $screenWidthSmaller_900
+              display: none
+          strong.wap
+            display: none
+            @media $screenWidthSmaller_900
+              display: block
+              font-size: 16px
+              margin-bottom: 10px
+            
+            
+            
+            
+    h2 
+      font-size: 40px
+      color: #ffffff
+      width: 100%
+      text-align: center
+      @media $screenWidthSmaller_900
+        font-size: 16px
+        text-align: left
+        
+         
+    .article-hd
+      color: #ffffff
+      font-size: 18px
+      line-height: 2em
+      text-indent: 2em
+      padding: 40px 0
+      @media $screenWidthSmaller_900
+        font-size: 12px
+        padding: 20px 0
+        
+      img
+        margin: 20px 0 
+        width: 100%
