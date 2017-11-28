@@ -1,0 +1,27 @@
+{
+  "name": "duozhi",
+  "version": "1.0.0",
+  "description": "duozhi_GES",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "clean": "rm -rf dist/"
+  },
+  "author": "gaoyasong",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jade": "^1.11.0",
+    "jquery": "^3.2.1",
+    "run-sequence": "^2.2.0"
+  }
+}

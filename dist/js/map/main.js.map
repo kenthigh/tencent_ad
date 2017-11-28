@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["$","document","ready","console","log","i"],"mappings":"AAAAA,EAAEC,UAAUC,MAAM,WACdC,QAAQC,IAAI,mBACZ,IAAI,IAAIC,EAAI,EAAGA,EAAI,IAAKA,IACpBF,QAAQC,IAAIC","file":"../main.js","sourcesContent":["$(document).ready(function() {\n    console.log('Jquery ready!!!')\n    for(var i = 0; i < 100; i++){\n        console.log(i)\n    }\n})"]}
