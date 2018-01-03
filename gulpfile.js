@@ -48,7 +48,7 @@ gulp.task('jade', function () {
       }
     }))
     .pipe(jade())
-    .pipe(gulp.dest('dist/html'))
+    .pipe(gulp.dest('dist/'))
 })
 
 gulp.task('img', function () {
