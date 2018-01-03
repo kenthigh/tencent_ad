@@ -4,7 +4,7 @@
   "description": "duozhi_GES",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js",
+    "dev": "gulp",
     "clean": "rm -rf dist/"
   },
   "author": "gaoyasong",
