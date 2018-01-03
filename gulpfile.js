@@ -22,7 +22,7 @@ gulp.task('default', function () {
 
 gulp.task('watch', function () {
   gulp.watch('src/js/*.js', ['uglifyjs'])
-  gulp.watch('src/page/*.jade', ['jade'])
+  gulp.watch('src/*.jade', ['jade'])
   gulp.watch('src/img/*', ['img'])
   gulp.watch('src/style/*.styl', ['stylus'])
 })
@@ -41,7 +41,7 @@ gulp.task('uglifyjs', function () {
 })
 
 gulp.task('jade', function () {
-  gulp.src('src/page/*.jade')
+  gulp.src('src/*.jade')
     .pipe(plumber({
       errorHandler: function(e) {
         gutil.log(gutil.colors.red(e) + gutil.colors.yellow("jade has been fucked"))
@@ -53,7 +53,6 @@ gulp.task('jade', function () {
 
 gulp.task('img', function () {
   gulp.src(['src/img/*', 'src/img/**/*'])
-  .pipe(imagemin())
   .pipe(gulp.dest('dist/img'))
 })
 
