@@ -77,14 +77,35 @@ body
     position: relative
     color: white
     font-size: 18px
+    text-align: center
     .section-title
       width: 235px
       margin: 0 auto
       display: block
-    p.middle
+    img.pointer
+      display: inline-block
+      vertical-align: middle
+      width: 35px
+      height: 28px
+    a.middle
+      font-size: 20px
       margin: 13px auto 0 auto
-      display: block
+      display: inline-block
       text-align: center
+      color: white
+      text-decoration: underline
+      position: relative
+      &:before
+        content: ''
+        background: url('../img/pointer.png') no-repeat
+        background-size: 100%
+        width: 35px
+        height: 28px
+        position: absolute
+        top: 0px
+        left: -53px
+        animation: pointerMove 0.5s ease-in infinite
+        animation-direction: alternate
     img.part_1_content
       width: 460px
       margin: 36px auto 88px auto
@@ -119,6 +140,21 @@ body
       width: 72px
       top: -45px
       right: -40px
+    img.book
+      position: absolute
+      width: 218px
+      top: -45px
+      right: -340px
+    img.earth
+      position: absolute
+      width: 218px
+      top: 1186px
+      left: -382px
+    img.hat
+      position: absolute
+      width: 218px
+      bottom: 135px
+      right: -430px
     .support
       width: 842px
       margin: 52px auto 0 auto
@@ -151,7 +187,9 @@ body
           &:hover
             background-position: -410px -781px
         
-
+@keyframes pointerMove
+  to
+    transform: translateX(10px)
 
 
 
